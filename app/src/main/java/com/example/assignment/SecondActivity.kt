@@ -49,9 +49,9 @@ class SecondActivity : AppCompatActivity() {
         binding.btnSignup.setOnClickListener {
             val signUpId = binding.etId.text.toString()
             val signUpPassword = binding.etPwd.text.toString()
-            val signUpName = binding.etName.text.toString()
+            val signUpName = binding.etName.text.toString().trim()
             val signUpPhone = binding.etPhone.text.toString()
-            val signUpAddr = binding.etAddr.text.toString()
+            val signUpAddr = binding.etAddr.text.toString().trim()
             val isInfoAgree = binding.btnInfoAgree.isChecked
 
             //id 확인

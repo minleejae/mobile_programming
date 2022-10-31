@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+
         //회원가입 버튼을 누르면 회원가입 액티비티 실행
         binding.btnSignup.setOnClickListener {
             startActivity(Intent(this, SecondActivity::class.java))
