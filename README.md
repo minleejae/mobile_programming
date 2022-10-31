@@ -5,7 +5,9 @@ Mac OS Montery 12.6
 사용 언어 : Kotlin  
 컴파일 SDK 버전 : 32 (Android 12)  
 사용 AVD : Pixel 2 API 31  
-
+  
+  
+  
 
 
 ## 구현 내용
@@ -21,7 +23,9 @@ buildFeatures { viewBinding true }를 추가했다.
 이와 별도로 현재 로그인 정보를 저장하기 위해 Data object를 선언하고,
 프리퍼런스를 관리하는 class인 PreferenceUtil class를 정의했다.  
 
-
+  
+  
+  
 
 ### 1. 첫번째 화면 - MainActivity (로그인)
 첫번째 화면은 Relative Layout으로 구성했다.
@@ -48,6 +52,9 @@ toast 메시지로 "아이디를 입력해주세요"나 "비밀번호를 입력�
 MainActivity가 켜지면 저장된 유저의 정보를 유지한채로 바로 ThirdActivity를 실행하고 MainActivity를 종료하도록 구현했다.  
 
 
+  
+  
+  
 
 ### 2. 두번째 화면 - SecondActivity (회원 가입)
 두번째 화면은 Linear Layout으로 orientation 속성을 기본값인 vertical로 두어 세로로 위젯들을 배치하여 구성했다. 
@@ -78,7 +85,9 @@ id의 경우 소문자나 숫자로 6\~13글자 입력이 가능하다. 비밀�
 이러한 규칙을 바탕으로 사용자의 정보 입력을 바탕으로 정규식을 통과하면 회원 정보를 프리퍼런스에 저장하고,
 프리퍼런스에 저장을 성공하면 MainActivity를 실행하고 현재 액티비티를 종료하여 로그인 화면으로 가도록 구현했다.  
 
-
+  
+  
+  
 
 ### 3. 세번째 화면 - ThirdActivity (상품 보기)
 세번째 화면은 Constraint Layout을 활용하여 레이아웃을 구성했다. Constraint Layout의 자식으로
