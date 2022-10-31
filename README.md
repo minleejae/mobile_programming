@@ -19,7 +19,7 @@ buildFeatures { viewBinding true }를 추가했다.
 과제에 주어진 3개의 화면을 구성하기위해 3개의 layout xml(activity_main.xml, activity_second.xml, activity_third.xml) 파일과
 3개의 액티비티(MainActivity.kt, SecondActivity.kt, ThirdActivity.kt) 파일을 구성했다.
 이와 별도로 현재 로그인 정보를 저장하기 위해 Data object를 선언하고,
-프리퍼런스를 관리하는 class인 PreferenceUtil class를 정의했다.
+프리퍼런스를 관리하는 class인 PreferenceUtil class를 정의했다.  
 
 
 
@@ -45,7 +45,7 @@ toast 메시지로 "아이디를 입력해주세요"나 "비밀번호를 입력�
 세번째 버튼인 상품 보기 버튼을 누르면 상품 보기에 해당하는 액티비티인 ThirdActivity를 생성하고, 로그인 액티비티는 종료하도록 구현했다.
 
 그리고 어플리케이션이 완벽하게 종료되지 않은 경우 사용자의 로그인 정보를 저장하여 어플리케이션을 재시작할 때
-MainActivity가 켜지면 저장된 유저의 정보를 유지한채로 바로 ThirdActivity를 실행하고 MainActivity를 종료하도록 구현했다.
+MainActivity가 켜지면 저장된 유저의 정보를 유지한채로 바로 ThirdActivity를 실행하고 MainActivity를 종료하도록 구현했다.  
 
 
 
@@ -76,7 +76,7 @@ id의 경우 소문자나 숫자로 6\~13글자 입력이 가능하다. 비밀�
 문자열에 trim() 메소드를 사용하여 공백을 제거했다.
 
 이러한 규칙을 바탕으로 사용자의 정보 입력을 바탕으로 정규식을 통과하면 회원 정보를 프리퍼런스에 저장하고,
-프리퍼런스에 저장을 성공하면 MainActivity를 실행하고 현재 액티비티를 종료하여 로그인 화면으로 가도록 구현했다.
+프리퍼런스에 저장을 성공하면 MainActivity를 실행하고 현재 액티비티를 종료하여 로그인 화면으로 가도록 구현했다.  
 
 
 
@@ -96,4 +96,4 @@ Frame Layout을 이용해 항상 화면의 오른쪽 아래에 이미지 버튼�
 
 사용자가 회원가입을 하지 않았다고 대답하면 AlertDialog.Builder의 setMessage(), setPositiveButton(), setNegativeButton()을 활용하여
 다시 회원가입을 하고 싶은지 여부를 물어보고 회원가입을 하고 싶다고 응답하면 SecondActivity(회원 가입)를 실행하고 현재 액티비티를 종료한다.
-회원가입을 하고 싶지 않다면 다이얼로그를 종료하고 상태를 유지한다.
+회원가입을 하고 싶지 않다면 다이얼로그를 종료하고 상태를 유지한다.  
