@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.example.assignment.databinding.ActivitySecondBinding
@@ -29,11 +30,6 @@ class SecondActivity : AppCompatActivity() {
         mBinding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnSignupCancel.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-        }
-
         //프리퍼런스 정보 확인하기 위해 유저 데이터 불러오기
         userArray = preferences.getMember("users")
 
@@ -47,7 +43,6 @@ class SecondActivity : AppCompatActivity() {
         val regexName = Regex("^[\\s가-힣a-zA-Z]{2,20}\$")
         // 주소 확인을 위한 영어, 한글, 숫자, 띄어쓰기 허용 정규식
         val regexAddr = Regex("^[\\s0-9가-힣a-zA-Z]{2,50}\$")
-
 
         //회원가입 버튼 클릭
         binding.btnSignup.setOnClickListener {
