@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2235" />
         <entry key="app/src/main/res/drawable/imageborder.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/radius_border_blue.xml" value="0.24" />
+        <entry key="app/src/main/res/drawable/radius_border_gray.xml" value="0.24" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.41354166666666664" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.4276041666666667" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.375" />

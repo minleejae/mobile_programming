@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:digits="0123456789-"
                     android:inputType="phone"
-                    android:maxLength="20"
+                    android:maxLength="13"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,12 +153,12 @@
                     android:id="@+id/btn_info_agree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="동의"></RadioButton>
+                    android:text="동의"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="거부"></RadioButton>
+                    android:text="거부"/>
             </RadioGroup>
         </LinearLayout>
 
