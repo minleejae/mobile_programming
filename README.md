@@ -4,7 +4,7 @@ Mac OS Montery 12.6
 
 사용 언어 : Kotlin  
 컴파일 SDK 버전 : 32 (Android 12)  
-AVD : Pixel 2 API 31  
+사용 AVD : Pixel 2 API 31  
 
 
 
