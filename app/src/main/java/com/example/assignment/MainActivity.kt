@@ -3,9 +3,7 @@ package com.example.assignment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.InputFilter
 import android.widget.Toast
-import com.example.assignment.Utils.retFilterAlphaNumSpace
 import com.example.assignment.databinding.ActivityMainBinding
 import org.json.JSONArray
 
