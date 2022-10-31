@@ -130,7 +130,10 @@ class SecondActivity : AppCompatActivity() {
             json.put("phone", signUpPhone)
             json.put("address", signUpAddr)
             json.put("info_agree", isInfoAgree.toString())
-            preferences.addMember(this, "users", json)
+            val res = preferences.addMember(this, "users", json)
+
+            //저장에 실패할 경우
+            if(!res) return@setOnClickListener
 
             startActivity(Intent(this, MainActivity::class.java))
             finish()

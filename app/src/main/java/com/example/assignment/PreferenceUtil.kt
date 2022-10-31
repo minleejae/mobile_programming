@@ -1,8 +1,10 @@
 package com.example.assignment
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -30,7 +32,7 @@ class PreferenceUtil(context: Context) {
     }
 
 
-    fun addMember(context: Context ,key:String, obj:JSONObject){
+    fun addMember(context: Context ,key:String, obj:JSONObject): Boolean{
         //초기값이 없다면 빈 배열로 불러온다
         val originString = getString(key)
         val jsonArray = JSONArray(originString)
@@ -40,8 +42,10 @@ class PreferenceUtil(context: Context) {
 
         if(dataSaveResult){
             Toast.makeText(context, "회원 가입에 성공했습니다.", Toast.LENGTH_SHORT).show()
+            return true
         }else{
             Toast.makeText(context, "회원 가입에 실패했습니다.", Toast.LENGTH_SHORT).show()
+            return false
         }
     }
 }
