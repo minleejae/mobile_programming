@@ -1,10 +1,10 @@
 ## 개발 환경
-Mac OS Montery 12.6
-안드로이드 스튜디오
+Mac OS Montery 12.6  
+안드로이드 스튜디오  
 
-사용 언어 : Kotlin
-컴파일 SDK 버전 : 32 (Android 12)
-AVD : Pixel 2 API 31
+사용 언어 : Kotlin  
+컴파일 SDK 버전 : 32 (Android 12)  
+AVD : Pixel 2 API 31  
 
 
 
